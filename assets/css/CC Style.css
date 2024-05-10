@@ -1,0 +1,419 @@
+/* To import font styles: */
+
+@import url('https://fonts.googleapis.com/css?family=Merienda+One|Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', Arial, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-family: 'Merienda One', 'Brush Script MT', cursive;
+}
+
+/* CSS Hierarchy: 0. External with 1.Inline 2. Embedded 3. External */
+
+/* Elements */
+
+
+
+h2{
+    font-size: xx-large;
+}
+
+strong{
+    font-size: 1.3rem;
+}
+
+legend{
+    font-size: large;
+    font-weight: 600;
+}
+
+nav>div{
+    padding: 1rem;
+}
+
+div>a{
+    text-decoration: none;
+    color: beige;
+    margin: 1rem;
+    text-transform: uppercase;
+}
+
+
+/* Attribute Selectors */
+
+button[type=submit]{
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    background-color: #5e361b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type=reset]{
+    margin-left: 0.75rem;
+    padding: 0.75rem;
+    color: #5e361b;
+    background-color: white;
+    border: 1px solid #5e361b;
+    border-radius: 5px;
+}
+
+input[type=text],
+                                input[type=email],
+                                input[list=coffees] {
+                                    height: 30px;
+                                    width: 90%;
+                                    padding-left: 10px;
+                                }
+
+                                /* overrides css above */
+                                input[list=coffees] {
+                                    width: 45%;
+                                }
+
+
+
+h1{
+    font-size: 3rem;
+}
+
+form{
+    width: 700px;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    margin: 25px auto; /* Centralised the form */
+}
+
+fieldset{
+    width: 700px;
+    border: none;
+}
+
+ul, ol{
+    padding: 0;
+    list-style: none;
+}
+
+select{
+    padding-left: 10px;
+    height: 30px;
+    width: 100px;
+}
+
+header{
+    color: beige;
+}
+
+header>p{
+    color: white;
+}
+
+/* Table Formatting */
+th, td{
+    /* border: 1px solid black; */
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+tr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* Classes */
+.black-background{
+    background-color: black;
+}
+
+.bold-text{
+    font-weight: bold;
+}
+
+.page-header{
+    height: 50vh;
+    background: center 75% / cover no-repeat;
+}
+
+.drinks-width{ /* Drinks-box */
+    width: 33%;
+    margin: 1rem 0;
+    display: inline-block;
+}
+
+.White-text{
+    color: white;
+}
+
+.Center-Text{
+    text-align: center;
+}
+.right-Text{
+    text-align: right;
+}
+
+
+.White-Box{
+    background-color: white;
+}
+
+.Image-formatting{
+    width: 96%;
+    border-radius: 8px;
+    margin: 2%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+   
+}
+
+.uppercase-text{
+    text-transform: uppercase;
+}
+
+.underline{
+    text-decoration: underline;
+}
+.no-decor{
+    text-decoration: none;
+}
+
+.reasons-box{
+    padding: 10px 5px 25px 5px;
+    border-radius: 8px;
+    width: 100%;
+    background-color: chocolate;
+    position: relative; left:  20%; top: 30px;
+    margin: 2%;
+   
+}
+
+.contact-boxes-container{
+    /* margin: 0 auto;
+    width: 66%; */
+    height: 270px;
+    /* display: flex;
+    border: 5px solid black; */
+
+}
+  
+.contactbox{
+    flex: 0 250px;
+    height: 250px;
+}
+
+#flex-parent{
+    
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    border: 5px solid black;
+    gap: 20px;
+}
+
+.flex-child{
+    flex: 0 0 250px;
+    align-self: center;
+    /* justify-content: center; */
+    height: 250px;
+    border: 5px solid black;
+    
+    
+}
+
+.contact-box-left{
+    margin-top: -20px;
+    width: 250px;
+}
+
+.contact-box-right{
+    margin-top: -20px;
+    text-align: right;
+    width: 250px;
+}
+
+.contact-box-center{
+    margin: 0 auto;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    align-self: flex-end;
+}
+
+.form-page-header{
+    background-image: url(https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/table.jpg);
+    height: 50vh;
+}
+
+.vertical-center{
+    position: relative; top: 50%;
+}
+
+/* Block level */
+
+.block-label{
+    display: block;
+}
+
+.block-width13rd{
+    width: 33.33%;
+}
+
+.block-width23rd{
+    width: 66.66%;
+}
+
+/* FLEXBOX CLASSES */
+
+.flex {
+    display: flex;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.vertical-center {
+    align-self: center;
+}
+
+.vertical-bottom {
+    align-self: flex-end;
+}
+
+.last {
+    order: 1;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+
+
+footer{
+    background-color: #6f4e37;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+/* DOM Classes */
+
+footer > p{
+    color: silver;
+}
+
+body>footer{
+    color: silver;
+}
+
+footer>a{
+    color: beige;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+label{
+    margin: 10px 15px 5px 0;
+}
+
+/* Used to center list numbering: */
+.myOL{
+    display: inline-block;
+    text-align: center;
+}
+
+/* IDs */
+
+
+#Coffee-Box{
+    background-color: brown;
+    position: relative; left: 70px; top: -15px;
+
+}
+
+#Tea-Box{
+    background-color: #6f4e37;
+    position: relative;
+    z-index: 1;
+
+}
+
+#Cold-Drinks-Box{
+    background-color: chocolate;
+    position: relative;
+    right: 70px;
+    top: -15px;
+
+}
+
+/* Background images and formatting */
+
+#home{
+     background-image: url(https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffeehouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 75%; 
+/* 
+    background: center 75% / cover no-repeat; */
+}
+
+#drinks-menu{
+    padding: 1rem 0;
+    margin-bottom: 80px;
+    /* background-image: url(https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+
+    background: url(https://codeinstitute.s3-eu-west-1.amazonaws.com/CSSEssentials/coffee-beans.jpg) center center / cover no-repeat fixed;
+}
+
+#terms{
+    border: 1px solid grey;
+    width: 90%;
+    /* height: 200px; */ /* This has been commented out because it was causing an overlapping issue */
+    padding: 0.5rem;
+    height: 200px;
+    overflow: auto;
+    margin-bottom: 10px;
+}
+
+#map{
+    border: none;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 55px;
+}
+
+#contact{
+    margin-bottom: 50px;
+}
+
+/* Flex box classes */
+paren
+
+/* ID used to blank top left box because it is empty */
+#Table-Blank{
+    border: 0px;
+}
+
+/* Psuedo Class */
+
+a:hover{
+    text-decoration: none;
+    color: chocolate;
+}
